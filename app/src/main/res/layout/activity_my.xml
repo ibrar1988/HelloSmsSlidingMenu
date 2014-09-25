@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyActivity">
+
+    <mezuslide.bruce.me.meizuslide.SlidingPanel
+        android:id="@+id/sliding_panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:id="@+id/activity_container_left"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left">
+
+            <ListView
+                android:id="@+id/contacts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:listSelector="#0000ff"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/activity_container_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/menu_width_closed"
+            android:layout_gravity="left"
+            android:background="#00ff00"/>
+
+    </mezuslide.bruce.me.meizuslide.SlidingPanel>
+</RelativeLayout>
